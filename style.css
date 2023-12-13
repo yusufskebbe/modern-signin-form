@@ -33,7 +33,90 @@ html{
   display: flex;
   border-radius: 2rem;
   box-shadow: 0 0.3 rgba(32, 61, 127, 0.3);
+  overflow: hidden;
 }
+
+.form-wrapper img{
+  width: 35rem;
+  position: absolute;
+  z-index: 100;
+}
+
+.left-img{
+  top: 25%;
+  left: 8%;
+  transition: all 0.5s 1s;
+}
+
+
+.navigate .right-img{
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(5rem);
+  transition: all 0.5s 1s;
+}
+.right-img{
+  top:17%;
+  right: 7%;
+  transform: translateY(-5rem);
+  opacity: 0;
+  visibility: hidden;
+  transition:all 0.5s 1s ;
+}
+
+
+
+.form-wrapper-right{
+  transition: all 0.5s 1s;
+}
+
+.form-wrapper-bg{
+  position: absolute;
+  width: 100rem;
+  height: 100rem;
+  background: var(--blue);
+  border-radius: 15rem;
+  left: -40%;
+  top: -90%;
+  transform-origin: right bottom;
+  transform: rotateZ(-40deg);
+  transition: transform 1.5s ;
+}
+
+.navigate .form-wrapper-bg{
+  transform: rotateZ(130deg) translate(15rem, 15rem);
+}
+
+
+.navigate .form-wrapper-left{
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.5s 1s;
+
+}
+
+
+
+.navigate .left-img{
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-5rem);
+  transition: all 0.5rem;
+}
+
+.navigate .form-wrapper-right{
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s 1s;
+}
+
+
+.form-wrapper-left{
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+}
+
 
 .form-wrapper-left, .form-wrapper-right{
 
